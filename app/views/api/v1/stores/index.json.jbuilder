@@ -5,6 +5,6 @@ json.array! @stores do |store|
   json.address store.address
   json.google_place_id store.google_place_id
 
-  json.ratings_count @store.ratings.count
-  json.ratings_average @store.ratings_average
+  json.ratings_count store.ratings.count
+  json.ratings_average store.ratings_average
 end
